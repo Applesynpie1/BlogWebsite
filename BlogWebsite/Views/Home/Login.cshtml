@@ -1,0 +1,119 @@
+﻿@{
+    Layout = "~/Views/Shared/_BlogWebsiteLayout.cshtml";
+}
+
+<p ng-init="fetchFunc()"></p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/dark-space-wallpaper-wyofj4xvqyfz8eg4.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font */
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 20px; /* Rounded corners */
+            width: 400px; /* Fixed width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .form-control {
+            background-color: rgba(0, 0, 0, 0.2) !important; /* Semi-transparent input fields */
+            border-radius: 5px !important;
+            border: none !important;
+            color: white !important;
+            font-size: 16px !important; /* Larger font size */
+            padding: 0px !important; /* Increased padding */
+            transition: background-color 0.3s ease !important; /* Smooth transition for background color */
+        }
+
+            .form-control:hover {
+                background-color: rgba(111, 66, 192, 0.8) !important; /* Purple color on hover */
+            }
+
+        .btn-primary {
+            background-color: #6f42c0; /* Purple color */
+            border: none;
+            border-radius: 10px;
+            font-size: 18px; /* Larger font size */
+            padding: 0px 40px; /* Increased padding */
+            min-height: 50px; /* Set a minimum height */
+            text-align: center; /* Center the text */
+        }
+
+        .btn-outline-light {
+            border-color: white;
+            color: white;
+            font-size: 16px; /* Larger font size */
+            padding: 0px 40px; /* Increased padding */
+            text-align: center; /* Center the text */
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <br /><br /><br /><br />
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4" style="font-weight: bold;">Sign In</h2>
+                        <p class="card-text mb-4 text-center" style="font-size: 18px; font-style: italic;">Ready to start your voyage?</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="email" style="font-size: 16px;">Email or Username </label>
+                                <input type="text" class="form-control text-white" id="email" placeholder=" Enter email or username" ng-model="loginUsername" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password" style="font-size: 16px;">Password</label>
+                                <input type="password" class="form-control text-white" id="password" placeholder=" Password" ng-model="loginPassword" />
+                            </div>
+                            <div class="form-group text-right">
+                                <a href="#" class="text-white" style="font-size: 16px;">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mt-3" ng-click="loginFunc()">Sign In</button>
+                            <div class="text-center mt-3">
+                                <span>or</span>
+                            </div>
+                            <button type="button" class="btn btn-outline-light btn-block mt-3">
+                                <i class="fab fa-2x fa-facebook-f"></i>
+                                Sign In with Facebook
+                            </button>
+                            <button type="button" class="btn btn-outline-light btn-block mt-3">
+                                <i class="fab fa-2x fa-google"></i>
+                                Sign In with Google
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <p class="card-text mb-4 text-center" style="font-size: 16px;">
+            New to VoyageAI?
+            <a ng-click="createAccountFunc()" href="" style="color:mediumpurple;">Join now</a>
+        </p>
+
+    </div>
+</body>
+</html>
+

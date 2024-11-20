@@ -82,7 +82,7 @@
     }
 
     $scope.createAccountFunc = function () {
-        window.location.href = "/Home/RegistrationPage";
+        window.location.href = "/Home/Registration";
     }
 
     $scope.loginFunc = function () {
@@ -104,6 +104,6 @@
     }
 
     $scope.signinFunc = function () {
-        window.location.href = "/Home/LoginPage";
+        window.location.href = "/Home/Login";
     }
 });

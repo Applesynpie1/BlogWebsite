@@ -6,85 +6,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background-image: url('https://images4.alphacoders.com/111/thumb-1920-1116506.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            font-family: "Open Sans", sans-serif;
         }
 
-        .card {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            width: 400px;
-            margin: 0 auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
-
-        .card-body {
-            padding: 30px;
-        }
-
-        .form-control {
-            background-color: rgba(0, 0, 0, 0.2) !important;
-            border-radius: 5px !important;
-            border: none !important;
-            color: white !important;
-            font-size: 16px !important;
-            padding: 0px !important;
-            transition: background-color 0.3s ease !important;
-        }
-
-            .form-control:hover {
-                background-color: rgba(111, 66, 192, 0.8) !important;
-            }
-
-        .btn-primary {
-            background-color: #6f42c0;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            padding: 0px 40px;
-            min-height: 50px;
-            text-align: center;
-        }
-
-        .btn-outline-light {
-            border-color: white;
-            color: white;
-            font-size: 16px;
-            padding: 0px 40px;
-            text-align: center;
-        }
-
-        .slogan {
-            position: fixed;
-            bottom: 45%;
-            right: 35%;
-            font-size: 90px;
-            font-weight: bold;
+        .logo {
+            height: 40px; /* Set a reasonable default height */
+            max-height: 100%; /* Ensure it doesn't exceed the navbar's height */
+            width: auto; /* Maintain aspect ratio */
         }
     </style>
-</head>
-<body class="bg-dark text-white">
-    <br /><br /><br /><br />
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h1 class="slogan">COMING SOON</h1>
 
+    <!-- Navbar -->
+    <nav style="background-color: gold; color: black;" class="navbar navbar-expand-lg text-bg-light">
 
-            </div>
+        <a href="#">
+            <img src="~/NewFolder1/bee logo trans.png" alt="Logo" class="logo">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav"">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-globe"></i> News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i> Account Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Messages</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i> Notifications <span class="badge badge-success">3</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">One new friend request</a>
+                        <a class="dropdown-item" href="#">John Doe posted on your wall</a>
+                        <a class="dropdown-item" href="#">Jane likes your post</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" class="rounded-circle" style="height:30px;width:30px" alt="Avatar"></a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-3">
+                <!-- Profile -->
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4>My Profile</h4>
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" class="rounded-circle" style="height:106px;width:106px" alt="Avatar">
+                        <hr>
+                        <p><i class="fa fa-pencil fa-fw"></i> Designer, UI</p>
+                        <p><i class="fa fa-home fa-fw"></i> London, UK</p>
+                        <p><i class="fa fa-birthday-cake fa-fw"></i> April 1, 1988</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="card">
+                    <div class="card-body">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#demo3">My Photos</button>
+                        <div id="demo3" class="collapse">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="https://cdn.mos.cms.futurecdn.net/k6okX2VVUg4qWoyxuNLsf7-1200-80.jpg" class="img-fluid mb-2" alt="Lights">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://i.natgeofe.com/n/9ac08f97-31b2-4083-b152-84a48fe95169/nationalgeographic_2723899.jpg" class="img-fluid mb-2" alt="Nature">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://t3.ftcdn.net/jpg/00/84/22/12/360_F_84221257_rfefWUrMTssPWFD16GSArJaLodR3sO8a.jpg" class="img-fluid mb-2" alt="Mountains">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" class="img-fluid mb-2" alt="Forest">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://i.natgeofe.com/n/9ac08f97-31b2-4083-b152-84a48fe95169/nationalgeographic_2723899.jpg" class="img-fluid mb-2" alt="Nature">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/10/17/USAT/75714706007-usatsi-24195665.jpg" class="img-fluid mb- 2" alt="Snow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Interests</h5>
+                        <span class="badge badge-primary">News</span>
+                        <span class="badge badge-success">Labels</span>
+                        <span class="badge badge-danger">Games</span>
+                        <span class="badge badge-warning">Friends</span>
+                        <span class="badge badge-info">Games</span>
+                        <span class="badge badge-light">Friends</span>
+                        <span class="badge badge-dark">Food</span>
+                        <span class="badge badge-primary">Design</span>
+                        <span class="badge badge-secondary">Art</span>
+                        <span class="badge badge-success">Photos</span>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Alert Box -->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hey!</strong> People are looking at your profile. Find out who.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="col-md-7">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h6 class="card-title">Start buzzing</h6>
+                        <textarea class="form-control" rows="3" placeholder="Status: Feeling Blue"></textarea>
+                        <button type="button" class="btn btn-primary mt-2"><i class="fa fa-pencil"></i> Post</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/002/427/non_2x/man-avatar-character-isolated-icon-free-vector.jpg" alt="Avatar" class="rounded-circle float-left mr-3" style="width:60px">
+                        <span class="float-right text-muted">1 min</span>
+                        <h4>John Doe</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="https://cdn.mos.cms.futurecdn.net/k6okX2VVUg4qWoyxuNLsf7-1200-80.jpg" class="img-fluid mb-2" alt="Northern Lights">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://i.natgeofe.com/n/9ac08f97-31b2-4083-b152-84a48fe95169/nationalgeographic_2723899.jpg" class="img-fluid mb-2" alt="Nature">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success"><i class="fa fa-thumbs-up"></i> Like</button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="Avatar" class="rounded-circle float-left mr-3" style="width:60px">
+                        <span class="float-right text-muted">16 min</span>
+                        <h4>Jane Doe</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" class="btn btn-success"><i class="fa fa-thumbs-up"></i> Like</button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="Avatar" class="rounded-circle float-left mr-3" style="width:40px">
+                        <span class="float-right text-muted">32 min</span>
+                        <h4>Angie Jane</h4>
+                        <hr>
+                        <p>Have you seen this?</p>
+                        <img src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" class="img-fluid mb-2" alt=" Avatar">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button type="button" class="btn btn-success"><i class="fa fa-thumbs-up"></i> Like</button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                </div>
+
+                <!-- End Middle Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-2">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p>Upcoming Events:</p>
+                        <img src="https://www.ecoredux.com/wp-content/uploads/forest.jpg" alt="Forest" class="img-fluid">
+                        <p><strong>Holiday</strong></p>
+                        <p>Friday 15:00</p>
+                        <button class="btn btn-secondary">Info</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p>Friend Request</p>
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/002/332/non_2x/ablack-man-avatar-character-isolated-icon-free-vector.jpg" alt="Avatar" class="img-fluid" style="width:50%"><br>
+                        <span>Jane Doe</span>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-success btn-block" title="Accept"><i class="fa fa-check"></i></button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-danger btn-block" title="Decline"><i class="fa fa-remove"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p>ADS</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p><i class="fa fa-bug fa-3x"></i></p>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
     </div>
-</body>
+    <br>
+
+    <!-- Footer -->
+
+    <footer class="bg-light text-center py-2">
+        <p>Powered by <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
 </html>
+
+
+
 

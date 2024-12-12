@@ -1,0 +1,97 @@
+/* BEGIN EXTERNAL SOURCE */
+
+
+        * {
+            color: floralwhite;
+        }
+
+        body {
+            background: url("../../NewFolder1/hex.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font */
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 20px; /* Rounded corners */
+            width: 400px; /* Fixed width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .form-control {
+            background-color: rgba(0, 0, 0, 0.2) !important; /* Semi-transparent input fields */
+            border-radius: 5px !important;
+            border: none !important;
+            color: white !important;
+            font-size: 16px !important; /* Larger font size */
+            padding: 0px !important; /* Increased padding */
+            transition: background-color 0.3s ease !important; /* Smooth transition for background color */
+        }
+
+            .form-control:hover {
+                background-color: rgba(111, 66, 192, 0.8) !important; /* Purple color on hover */
+            }
+
+        .btn-primary {
+            background-color: #6f42c0; /* Purple color */
+            border: none;
+            border-radius: 10px;
+            font-size: 18px; /* Larger font size */
+            padding: 0px 40px; /* Increased padding */
+            min-height: 50px; /* Set a minimum height */
+            text-align: center; /* Center the text */
+        }
+
+        .btn-outline-light {
+            border-color: white;
+            color: white;
+            font-size: 16px; /* Larger font size */
+            padding: 0px 40px; /* Increased padding */
+            text-align: center; /* Center the text */
+        }
+    
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+h2 {
+font-weight: bold;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+p {
+font-size: 18px; font-style: italic;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+label {
+font-size: 16px;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+label {
+font-size: 16px;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+a {
+font-size: 16px;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+p {
+font-size: 16px;
+}
+/* END EXTERNAL SOURCE */
+/* BEGIN EXTERNAL SOURCE */
+a {
+color:mediumpurple;
+}
+/* END EXTERNAL SOURCE */
